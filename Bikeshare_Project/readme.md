@@ -1,5 +1,7 @@
 The First Data Analysis Project
-    **Used Resources :
+    
+    *
+    *Used Resources :
 	
 	--Python Data Science Hand Book (Book)
 	

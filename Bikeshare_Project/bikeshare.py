@@ -15,7 +15,6 @@ from datetime import timedelta
 CITY_DATA = { 'Chicago': 'chicago.csv',
               'New York': 'new_york_city.csv',
               'Washington': 'washington.csv' }
-Cities = ['Chicago', 'New York', 'Washington']
 Months = ['All', 'January', 'February', 'March', 'April', 'May', 'June']
 Days = ['All', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 def get_filters():
@@ -32,7 +31,7 @@ def get_filters():
     while True:
         city=str(input(" What City You Want To Check ? Chicago , New york or Washington \n Enter the city Name : "))
         city=city.title()
-        if city in Cities:
+        if city in CITY_DATA.keys():
             break
         elif city.lower()=="newyork":
             city="New York"
